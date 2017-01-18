@@ -1,0 +1,96 @@
+/* Setting up flexboxes */
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0px;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body .main {
+  order: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex: 1 0 auto;
+  align-content: flex-start;
+  overflow: hidden;
+  background-color: black;
+}
+body header {
+  order: 1;
+  flex: 0 0 auto;
+  background-image: linear-gradient(hsl(100,30%,30%),hsl(100,10%,10%) 20%, hsl(0,0%,0%));
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+body footer {
+  order: 3;
+  flex: 0 0 100px;
+}
+input {
+  display: none;
+}
+.main article {
+  flex: 0 1 0px;
+  order: 3;
+  border: none;
+  padding: 0px;
+  transition: 1s 0s transform ease-out, .75s 0s opacity ease-in;
+  transform: translateX(-100%);
+  opacity: 0;
+  background-color: green;
+}
+article * {
+  display: none;
+}
+input#default:checked ~ article.default,
+input#about:checked ~ article.about,
+input#projects:checked ~ article.projects,
+input#other:checked ~ article.other {
+  flex: 0 0 100%;
+  order: 2;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transform: translateX(0%);
+  opacity: 1;
+}
+input#default:checked ~ article.default *,
+input#about:checked ~ article.about *,
+input#projects:checked ~ article.projects *,
+input#other:checked ~ article.other * {
+  display: flex;
+  overflow: auto;
+}
+.main label {
+  flex: 0 0 auto;
+  text-align: center;
+  height: 2em;
+/*  background-image: linear-gradient(hsl(110,90%,90%), hsl(110,40%,40%));*/
+  padding: .2em;
+  border: 2px solid black;
+  border-radius: .5em;
+  vertical-align: middle;
+}
+input#about:checked ~ label.about,
+input#projects:checked ~ label.projects,
+input#other:checked ~ label.other {
+/*  background-image: linear-gradient(hsl(110,50%,50%), hsl(110,100%,100%));*/
+}
+.main label:hover {
+/*  background-image: linear-gradient(hsl(110,100%,100%), hsl(110,50%,50%));*/
+}
+h1 {
+  flex: 1 1 auto;
+  color: white;
+}
+header i {
+  color: white;
+}
