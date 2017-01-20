@@ -50,3 +50,6 @@
 #notes {
   /*display: flex;*/
 }
+body {
+  background-color: hsl(40,57%,34%);
+}
