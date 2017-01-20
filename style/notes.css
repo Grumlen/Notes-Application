@@ -5,6 +5,8 @@
   margin: .2em;
   border-radius: .6em;
   width: 100%;
+  word-wrap: break-word;
+  overflow: auto;
 }
 #list {
   display: block;
