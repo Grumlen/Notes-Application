@@ -11,12 +11,13 @@
   </head>
   <body>
     <div id="list">
-      <button type="button" class="ui primary button all">All Notes</button>
-      <button type="button" class="ui primary button create">New Note</button>
+      <button type="button" class="ui primary button" id="all">All Notes</button>
+      <button type="button" class="ui primary button" id="create">New Note</button>
     </div>
     <div id="noteArea" class="ui input">
-      <div id="addNotes" class="hidden">
+      <div id="addNotes">
         <form id="addnote">
+          <h2 id="addTitle">Create Note</h2>
           <div class="ui labeled fluid input">
             <div class="ui primary label">Title</div>
             <input type="text" id="title" placeholder="Title" class=""></input>

@@ -17,7 +17,7 @@
 #list button {
   display: block;
   margin: .3em;
-  max-width: 90%;
+  width: 90%;
   overflow: hidden;
 }
 #noteArea {
@@ -45,6 +45,6 @@
   font-size: .6em;
   display: inline-block;
 }
-body {
-
+#notes {
+  /*display: flex;*/
 }
