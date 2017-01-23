@@ -1,33 +1,19 @@
 .note, #addnote {
-  border: 2px solid black;
-  padding: .2em;
-  background-color: hsl(49,77%,74%);
-  margin: .2em;
-  border-radius: .6em;
-  width: 100%;
-  word-wrap: break-word;
-  overflow: auto;
+  border: 2px solid black !important;
+  background-color: hsl(49,77%,74%) !important;
+  border-radius: .6em !important;
+  word-wrap: break-word !important;
+  overflow: auto !important;
+  margin-bottom: 1em !important;
 }
 #list {
-  display: block;
-  position: absolute;
-  height: 100%;
-  margin: .5em;
   overflow: hidden;
-  width: 150px;
 }
 #list button {
   display: block;
-  margin: .3em;
-  width: 90%;
+  margin-top: .3em;
+  margin-bottom: .3em;
   overflow: hidden;
-}
-#noteArea {
-  display: block;
-  position: absolute;
-  left: 150px;
-  width: 50%;
-  min-width: 200px;
 }
 .hidden {
   display: none;
@@ -46,9 +32,6 @@
 .date {
   font-size: .6em;
   display: inline-block;
-}
-#notes {
-  /*display: flex;*/
 }
 body {
   background-color: hsl(34,57%,40%);
