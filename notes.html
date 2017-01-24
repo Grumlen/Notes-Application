@@ -10,33 +10,42 @@
     <link rel="stylesheet" href="style/notes.css" type="text/css">
   </head>
   <body>
+    <div class="ui large top menu">
+      <div class="ui container">
+        <div class="ui center aligned segment">
+          <h1 class="ui header">Notepad Application</h1>
+        </div>
+        <div class="right item" id="menu">
+          <button type="button" class="ui primary button" id="all">All Notes</button>
+          <button type="button" class="ui primary button" id="create">New Note</button>
+        </div>
+      </div>
+    </div>
     <div class="ui grid">
       <div class="four wide column">
         <div id="list" class="ui vertical fluid menu">
-          <button type="button" class="fluid ui primary button" id="all">All Notes</button>
-          <button type="button" class="fluid ui primary button" id="create">New Note</button>
         </div>
       </div>
       <div id="noteArea" class="twelve wide stretched column">
-        <div id="addNotes" class="ui fluid container">
-          <form id="addnote">
-            <h2 id="addTitle">Create Note</h2>
-            <div class="ui labeled fluid input">
-              <div class="ui primary label">Title</div>
-              <input type="text" id="title" placeholder="Title" class=""></input>
-            </div>
-            <textarea id="contents" placeholder="Contents"></textarea>
-            <div class="ui buttons">
-              <button type="button" class="ui primary button save">Save</button>
-              <button type="button" class="ui primary button discard">Discard</button>
-            </div>
-          </form>
-        </div>
         <div class="ui fluid container">
           <div id="notes" class="doubling stackable three column ui grid container">
           </div>
         </div>
       </div>
+    </div>
+    <div id="addNotes" class="ui modal">
+      <form id="addnote">
+        <h2 id="addTitle">Create Note</h2>
+        <div class="ui labeled fluid input">
+          <div class="ui primary label">Title</div>
+          <input type="text" id="title" placeholder="Title" class=""></input>
+        </div>
+        <textarea id="contents" placeholder="Contents"></textarea>
+        <div class="ui buttons">
+          <button type="button" class="ui primary button save">Save</button>
+          <button type="button" class="ui primary button discard">Discard</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>

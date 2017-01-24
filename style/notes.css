@@ -1,4 +1,4 @@
-.note, #addnote {
+.note, .modal {
   border: 2px solid black !important;
   border-radius: .6em !important;
   word-wrap: break-word !important;
