@@ -2,3 +2,4 @@
      User Global Variables
 *******************************/
 @primaryColor : #36633D;
+@pageBackground: hsl(49,77%,74%);

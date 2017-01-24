@@ -29,10 +29,20 @@
 .date {
   font-size: .6em;
   display: inline-block;
+  margin-bottom: 0px;
 }
 body {
-  background-color: hsl(34,57%,40%);
+  background-color: hsl(34,57%,40%) !important;
 }
 #title, #contents, .note, #addnote {
   background-color: hsl(49,77%,74%) !important;
+}
+#addnote {
+  padding-top: .2em;
+}
+h2 {
+  margin-left: .5em;
+}
+body.pushable>.pusher {
+  background: hsl(34,57%,40%) !important;
 }

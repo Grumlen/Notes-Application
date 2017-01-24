@@ -10,42 +10,42 @@
     <link rel="stylesheet" href="style/notes.css" type="text/css">
   </head>
   <body>
-    <div class="ui large top menu">
-      <div class="ui container">
-        <div class="ui center aligned segment">
-          <h1 class="ui header">Notepad Application</h1>
-        </div>
-        <div class="right item" id="menu">
-          <button type="button" class="ui primary button" id="all">All Notes</button>
-          <button type="button" class="ui primary button" id="create">New Note</button>
-        </div>
-      </div>
+    <div id="list" class="ui vertical thin sidebar menu">
     </div>
-    <div class="ui grid">
-      <div class="four wide column">
-        <div id="list" class="ui vertical fluid menu">
-        </div>
-      </div>
-      <div id="noteArea" class="twelve wide stretched column">
-        <div class="ui fluid container">
-          <div id="notes" class="doubling stackable three column ui grid container">
+    <div class="pusher">
+      <div class="ui large top menu">
+        <div class="ui container">
+          <div class="ui item" id="menu">
+            <div class="ui vertical buttons">
+              <button type="button" class="ui primary button" id="create">New Note</button>
+              <button type="button" class="ui primary button" id="showAll">Display All</button>
+              <button type="button" class="ui primary button hidden" id="noteButtons">Saved Notes</button>
+            </div>
+          </div>
+          <div class="ui left floated segment" id="header">
+            <h1 class="ui header">Notepad Application</h1>
           </div>
         </div>
       </div>
-    </div>
-    <div id="addNotes" class="ui modal">
-      <form id="addnote">
-        <h2 id="addTitle">Create Note</h2>
-        <div class="ui labeled fluid input">
-          <div class="ui primary label">Title</div>
-          <input type="text" id="title" placeholder="Title" class=""></input>
+      <div id="noteArea" class="ui fluid container">
+        <div id="notes" class="doubling stackable three column ui grid container">
         </div>
-        <textarea id="contents" placeholder="Contents"></textarea>
-        <div class="ui buttons">
-          <button type="button" class="ui primary button save">Save</button>
-          <button type="button" class="ui primary button discard">Discard</button>
-        </div>
-      </form>
+      </div>
+      <div id="addNotes" class="ui modal">
+        <form id="addnote">
+          <h2 id="addTitle">Create Note</h2>
+          <div class="ui labeled fluid input">
+            <div class="ui primary label">Title</div>
+            <input type="text" id="title" placeholder="Title" class=""></input>
+          </div>
+          <textarea id="contents" placeholder="Contents"></textarea>
+          <div class="ui buttons">
+            <button type="button" class="ui primary button save">Save</button>
+            <div class="or"></div>
+            <button type="button" class="ui primary button discard">Discard</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
