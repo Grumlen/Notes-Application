@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">    <title></title>
     <script src="lib/require.js" data-main="lib/notes"></script>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -13,17 +12,15 @@
     <div id="list" class="ui vertical thin sidebar menu">
     </div>
     <div class="pusher">
-      <div class="ui large top menu">
+      <div class="ui large top menu" id="menu">
         <div class="ui container">
-          <div class="ui item" id="menu">
-            <div class="ui vertical buttons">
+          <div class="ui left floated segment" id="header">
+            <h1 class="ui header">Notepad Application</h1>
+            <div class="ui buttons">
               <button type="button" class="ui primary button" id="create">New Note</button>
               <button type="button" class="ui primary button" id="showAll">Display All</button>
               <button type="button" class="ui primary button hidden" id="noteButtons">Saved Notes</button>
             </div>
-          </div>
-          <div class="ui left floated segment" id="header">
-            <h1 class="ui header">Notepad Application</h1>
           </div>
         </div>
       </div>
@@ -45,6 +42,11 @@
             <button type="button" class="ui primary button discard">Discard</button>
           </div>
         </form>
+      </div>
+      <div class="ui inverted vertical footer segment" id="footer">
+        <div class="ui center aligned container">
+          <p>This site was made by Nathan Christian using HTML, CSS, Javascript, Semantic UI, and requireJS. Copyright 2016.</p>
+        </div>
       </div>
     </div>
   </body>

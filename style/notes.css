@@ -46,3 +46,14 @@ h2 {
 body.pushable>.pusher {
   background: hsl(34,57%,40%) !important;
 }
+.pusher {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#noteArea {
+  flex-grow: 1;
+}
+#menu, #footer {
+  flex-shrink: 0;
+}
